@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bentham&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rye&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonz.ai</title>
+</head>
+<body>
+    
+    <header>
+        <img src="/assets/logo/bonz.ai-logo-black-landscape.png" alt="bonzailogoblacklandscape" max-width="50%" height="50%">
+        <img id="hamburgermenu" src="/assets/vectorart/align-justify.png" alt="hamburgermenu" height="50%">
+    </header>
+    
+    <main>
+
+        <section class="book__inputform">
+            <form>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter a location" required>
+                <br>
+                <label for="arrival">Arrival:</label>
+                <input type="date" id="arrival" name="arrival" required>
+                <label for="departure">Departure:</label>
+                <input type="date" id="departure" name="departure" required>
+                <br>
+                <label for="quantity">How many?</label>
+                <select name="quantity" id="quantity" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <br>
+                <br>
+                <button class="mainbutton" type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="backgroundimagecontainer">
+            <img class="backgroundimagecontainer__image" src="/assets/photos/09-day.jpg" alt="photo09day">
+        </section>
+
+        <section class="searchresults">
+            <section class="resultcard">
+                <section class="resultcard__mainpart">
+                    <img class="resultcard__image" src="/assets/photos/01-day.jpg" alt="image01-day">
+                    <p class="resultcard__imageslink--pinkcolor">Visa Bilder ></p>
+                    <article class="resultcard__information">
+                        <h3 class="resultcard__information--bottomcolor">Standard</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et itaque deserunt voluptas quod dolor cum at ut, libero iste.</p>
+                    </article>
+                    <aside class="resultcard__extrainformation">
+                        <p class="resultcard__extrainformation--smallergreytext">*20-22 m2</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Skrivbord och stol</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Strykjärn och hårtork</p>
+                    </aside>
+                </section>
+                <section class="resultcard__dropdown">
+                    <button class="mainbutton">1321 kr/natt</button>
+                    <button class="mainbutton mainbutton--greybutton">1176 kr/natt</button>
+                </section>
+            </section>
+
+            <section class="resultcard">
+                <section class="resultcard__mainpart">
+                    <img class="resultcard__image" src="/assets/photos/04-day.jpg" alt="image01-day">
+                    <p class="resultcard__imageslink--pinkcolor">Visa Bilder ></p>
+                    <article class="resultcard__information">
+                        <h3 class="resultcard__information--bottomcolor">Family Four</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et itaque deserunt voluptas quod dolor cum at ut, libero iste.</p>
+                    </article>
+                    <aside class="resultcard__extrainformation">
+                        <p class="resultcard__extrainformation--smallergreytext">*4 personer</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Våningssäng</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Vattenkokare</p>
+                    </aside>
+                </section>
+                <section class="resultcard__dropdown">
+                    <button class="mainbutton">2321 kr/natt</button>
+                    <button class="mainbutton mainbutton--greybutton">2176 kr/natt</button>
+                </section>
+            </section>
+
+            <section class="resultcard">
+                <section class="resultcard__mainpart">
+                    <img class="resultcard__image" src="/assets/photos/05-night.jpg" alt="image01-day">
+                    <p class="resultcard__imageslink--pinkcolor">Visa Bilder ></p>
+                    <article class="resultcard__information">
+                        <h3 class="resultcard__information--bottomcolor">Superior</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et itaque deserunt voluptas quod dolor cum at ut, libero iste.</p>
+                    </article>
+                    <aside class="resultcard__extrainformation">
+                        <p class="resultcard__extrainformation--smallergreytext">*32 m2</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Bäddsoffa</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Balkong/terass</p>
+                    </aside>
+                </section>
+                <section class="resultcard__dropdown">
+                    <button class="mainbutton">3246 kr/natt</button>
+                    <button class="mainbutton mainbutton--greybutton">2976 kr/natt</button>
+                </section>
+            </section>
+
+            <section class="resultcard">
+                <section class="resultcard__mainpart">
+                    <img class="resultcard__image" src="/assets/photos/01-day.jpg" alt="image01-day">
+                    <p class="resultcard__imageslink--pinkcolor">Visa Bilder ></p>
+                    <article class="resultcard__information">
+                        <h3 class="resultcard__information--bottomcolor">Standard</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et itaque deserunt voluptas quod dolor cum at ut, libero iste.</p>
+                    </article>
+                    <aside class="resultcard__extrainformation">
+                        <p class="resultcard__extrainformation--smallergreytext">*20-22 m2</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Skrivbord och stol</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Strykjärn och hårtork</p>
+                    </aside>
+                </section>
+                <section class="resultcard__dropdown">
+                    <button class="mainbutton">1321 kr/natt</button>
+                    <button class="mainbutton mainbutton--greybutton">1176 kr/natt</button>
+                </section>
+            </section>
+
+            <section class="resultcard">
+                <section class="resultcard__mainpart">
+                    <img class="resultcard__image" src="/assets/photos/04-day.jpg" alt="image01-day">
+                    <p class="resultcard__imageslink--pinkcolor">Visa Bilder ></p>
+                    <article class="resultcard__information">
+                        <h3 class="resultcard__information--bottomcolor">Family Four</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et itaque deserunt voluptas quod dolor cum at ut, libero iste.</p>
+                    </article>
+                    <aside class="resultcard__extrainformation">
+                        <p class="resultcard__extrainformation--smallergreytext">*4 personer</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Våningssäng</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Vattenkokare</p>
+                    </aside>
+                </section>
+                <section class="resultcard__dropdown">
+                    <button class="mainbutton">2321 kr/natt</button>
+                    <button class="mainbutton mainbutton--greybutton">2176 kr/natt</button>
+                </section>
+            </section>
+
+            <section class="resultcard">
+                <section class="resultcard__mainpart">
+                    <img class="resultcard__image" src="/assets/photos/05-night.jpg" alt="image01-day">
+                    <p class="resultcard__imageslink--pinkcolor">Visa Bilder ></p>
+                    <article class="resultcard__information">
+                        <h3 class="resultcard__information--bottomcolor">Superior</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et itaque deserunt voluptas quod dolor cum at ut, libero iste.</p>
+                    </article>
+                    <aside class="resultcard__extrainformation">
+                        <p class="resultcard__extrainformation--smallergreytext">*32 m2</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Bäddsoffa</p>
+                        <p class="resultcard__extrainformation--smallergreytext">*Balkong/terass</p>
+                    </aside>
+                </section>
+                <section class="resultcard__dropdown">
+                    <button class="mainbutton">3246 kr/natt</button>
+                    <button class="mainbutton mainbutton--greybutton">2976 kr/natt</button>
+                </section>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <h4>Om Oss</h4>
+            <p>Policy</p>
+            <p>Jobba hos oss</p>
+            <p>Säker betalning</p>
+            <p>GDPR</p>
+        </article>
+        <article>
+            <h4>Hitta Hit</h4>
+            <p>Klarabergsviadukten 53</p>
+            <p>114 36 Stockholm</p>
+            <br>
+            <h4>Kontakta oss</h4>
+            <p>bonzai@kontakta.se</p>
+            <p>+1 23 456 789</p>
+        </article>
+    </footer>
+</body>
+</html>

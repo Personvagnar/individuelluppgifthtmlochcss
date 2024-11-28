@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bentham&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rye&display=swap" rel="stylesheet">
@@ -13,16 +14,16 @@
     
     <header>
         <img src="/assets/logo/bonz.ai-logo-black-landscape.png" alt="bonzailogoblacklandscape" max-width="50%" height="50%">
-        <img src="/assets/vectorart/align-justify.png" alt="hamburgermenu" height="50%">
+        <img id="hamburgermenu" src="/assets/vectorart/align-justify.png" alt="hamburgermenu" height="50%">
     </header>
     
     <main>
-        <section class="about__main--backgroundreview">
-            <img src="/assets/photos/09-night.jpg" alt="photo09night">
-            <button>"Excellent! 5/5"</button>
+        <section class="aboutimagecontainer">
+            <img class="aboutimagecontainer__image" src="/assets/photos/09-night.jpg" alt="photo09night">
+            <button class="mainbutton aboutimagecontainer__button">"Excellent! 5/5"</button>
         </section>
 
-        <section class="aboutcontent">
+        <section class="aboutcontainer">
             <article class="aboutcontent__aboutwhite">
                 <h2>About Us</h2>
                 <p>Welcome to Bonz.AI, where innovation meets sustainability! Nestled in the heart of the city, we are more than just a place to stay; 
@@ -43,7 +44,7 @@
                 </ul>
             </article>
         </section>
-        <section class="aboutcontent aboutcontent__black">
+        <section class="aboutcontainer aboutcontent__black">
             <article class="aboutcontentblack__aboutblack">
                 <h2>AI & Technology Integration</h2>
                 <p>Our hotel offers a high-tech experience to keep you connected and enhance every aspect of your stay:</p>
@@ -68,9 +69,9 @@
             </article>
         </section>
 
-        <section class="about__main--backgroundreview">
-            <img src="/assets/photos/09-day.jpg" alt="photo09day">
-            <button>"Excellent! 5/5"</button>
+        <section class="aboutimagecontainer">
+            <img class="aboutimagecontainer__image" src="/assets/photos/08-night.jpg" alt="photo09day">
+            <button class="mainbutton aboutimagecontainer__button">"Excellent! 5/5"</button>
         </section>
     </main>
 

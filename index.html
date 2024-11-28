@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bentham&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rye&display=swap" rel="stylesheet">
@@ -13,24 +14,26 @@
     
     <header>
         <img src="/assets/logo/bonz.ai-logo-black-landscape.png" alt="bonzailogoblacklandscape" max-width="50%" height="50%">
-        <img src="/assets/vectorart/align-justify.png" alt="hamburgermenu" height="50%">
+        <img id="hamburgermenu" src="/assets/vectorart/align-justify.png" alt="hamburgermenu" height="50%">
     </header>
     
     <main>
-        <section class="main--backgroundimage">
-            <img src="/assets/photos/09-day.jpg" alt="photo09day">
+        
+        <section class="backgroundimagecontainer">
+            <img class="backgroundimagecontainer__image" src="/assets/photos/09-day.jpg" alt="photo09day">
         </section>
-        <section class="main--spinningwheel">
-            <img src="/assets/logo/bonz.ai-logo-color-symbol.png" alt="bonzailogocolorsymbol">
-            <h1>Sustainability</h1>
-            <h1>ECO-friendly</h1>
-            <h1>Ultimate stay</h1>
-            <h1>GO-Green</h1>
-            <h1>Technology</h1>
+
+        <section class="spinningwheel">
+            <img class="spinningwheel__image" src="/assets/logo/bonz.ai-logo-color-symbol.png" alt="bonzailogocolorsymbol">
+            <h1 class="spinningwheel__headline">Sustainability</h1>
+            <h1 class="spinningwheel__headline">ECO-friendly</h1>
+            <h1 class="spinningwheel__headline">Ultimate stay</h1>
+            <h1 class="spinningwheel__headline">GO-Green</h1>
+            <h1 class="spinningwheel__headline">Technology</h1>
         </section>
-        <section class="main--buttoncontainer">
-            <button>Om Hotellet</button>
-            <button>Boka Rum</button>
+        <section class="buttoncontainer">
+            <button class="mainbutton" id="aboutbutton">Om Hotellet</button>
+            <button class="mainbutton" id="bookbutton">Boka Rum</button>
         </section>
     </main>
 
