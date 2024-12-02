@@ -13,7 +13,7 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100vw;
+    width: 100%;
     height: 6rem;
     display: flex;
     justify-content: space-between;
@@ -28,19 +28,16 @@ footer {
     width: 100%;
     height: auto;
     padding: 2rem 1rem 2rem;
+    position: static;
 }
 footer article {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     color: #F6F9F8;
 }
 footer article:nth-last-child(1) {
     text-align: right;
-}
-@media screen and (max-height: 796px){
-    footer {
-        position: static;
-    }
 }
 main {
     display: flex;
@@ -135,25 +132,24 @@ button:hover {
     padding: 2rem;
     width: 100%;
 }
-.aboutcontent__black {
+.aboutcontent {
+    color: #141414;
+    width: clamp(20px, 100%, 1800px);
+}
+.aboutcontainer--blackbackground {
     background: #141414;
 }
-.aboutcontent__aboutwhite {
-    color: #141414;
-    width: clamp(20px, 100%, 800px);
-}
-.aboutcontentblack__aboutblack {
+.aboutcontent--whitetext {
     color: #F6F9F8;
-    width: clamp(20px, 100%, 800px);
 }
 ul {
     margin-left: 2rem;
     font-style: italic;
 }
-.about__aboutwhite--pinktextstyle {
+.aboutcontent__list--pinktextstyle {
     color: #EA5581;
 }
-.about__aboutblack--greentextstyle {
+.aboutcontent__list--greentextstyle {
     color: #55EABE;
 }
 .book__inputform {
@@ -217,7 +213,7 @@ form select, form input {
     padding: 1rem;
     overflow: hidden;
 }
-.resultcard__information--bottomcolor {
+.resultcard__informationheadline {
     border-bottom: 2px solid #55EABE;
     font-size: 1.5rem;
 }
@@ -306,7 +302,62 @@ form select, form input {
 }
 
 @media screen and (min-width: 1200px) {
+    .backgroundimagecontainer {
+        width: 100%;
+    }
     .searchresults {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .aboutcontent__headline {
+        font-size: 150%;
+    }
+    .aboutcontent__informationtext {
+        font-size: 150%;
+    }
+    .aboutcontent__list--pinktextstyle {
+        font-size: 150%;
+    }
+    .aboutcontent__list--greentextstyle {
+        font-size: 150%;
+    }
+    .aboutcontent__list {
+        font-size: 120%;
+    }
+    .resultcard__informationtext {
+        font-size: 150%;
+    }
+    .resultcard__extrainformation--smallergreytext {
+        font-size: 120%;
+    }
+    .footer__fixed {
+        position: fixed;
+        bottom: 0;
+    }
+    .aboutimagecontainer__button {
+        top: 85%;
+        opacity: 1;
+        animation-name: buttonAnim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: forwards;
+    }
+    @keyframes buttonAnim {
+        0% {
+            opacity: 0;
+            left: 0%;
+        }
+        10% {
+            opacity: 1;
+            left: 15%;
+        }
+        90% {
+            opacity: 1;
+            left: 85%;
+        }
+        100% {
+            opacity: 0;
+            left: 100%;
+        }
     }
 }
